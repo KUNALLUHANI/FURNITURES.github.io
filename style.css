@@ -1,0 +1,477 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family:  sans-serif;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+ 
+}
+
+
+.carousel-item {
+  width: 100%;
+  height: 600px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+}
+
+.services,
+.All-Products,
+.contact,
+.about {
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2c3c4b;
+  font-weight: 300;
+}
+
+.services-area {
+  background-color: #fffaf6;
+}
+
+@media (max-width: 767px) {
+  .services-area {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+}
+
+.services-left {
+  position: relative;
+}
+
+.services-left .services img {
+  width: 100%;
+}
+
+.single-services {
+  border: 1px solid #ddd;
+  padding: 25px 15px;
+  background: #fff;
+}
+
+.single-services .services-icon i {
+  font-size: 50px;
+  color: #fe7865;
+}
+
+.single-services .services-content .title {
+  font-size: 20px;
+  color: #fe7865;
+}
+
+.main-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid #fe7865;
+  padding: 0 35px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 5;
+  background-color: #fe7865;
+}
+
+.main-btn:hover {
+  background-color: #fff;
+  color: #fe7865;
+  border-color: #fe7865;
+}
+
+.card {
+  background-color: #fcfcfc;
+}
+
+.prodect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: #fbffe3; */
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+
+  font-family: sans-serif;
+  list-style: none;
+
+}
+
+.section-work-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-work-data {
+  background-color: #fffaf6;
+
+  text-align: center;
+}
+
+.common-numbers {
+  font-size: 4.8rem;
+}
+
+.section-work-data p {
+  color: #3333;
+}
+
+
+.contact {
+  background-color: #fcfcfc;
+}
+
+.contact h2 {
+  align-items: center;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+#scrollTop {
+  display: inline-block;
+  background-color: #fe7865;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  opacity: 0.3s, visibility 0.2s;
+  display: none;
+  z-index: 1000;
+
+}
+
+#scrollTop i {
+  font-size: 32px;
+  color: white;
+
+}
+
+#scrollTop:hover {
+  cursor: pointer;
+  background-color: #2c3c4b;
+}
+
+.sale {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  min-width: 60px;
+  font-size: 16px;
+  padding: 0 2px 2px;
+  height: auto;
+  display: block;
+  text-align: center;
+  align-items: center;
+  color: #ff4c55;
+  border: 2px solid #ff4c55;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.sale h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #FFf;
+  background-color: #fe7865;
+  padding: 0;
+  margin: 0;
+}
+
+.sale p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #ff4c55;
+  background-color: #fff;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.sale-box {
+  background-image: url(./image/sale-box.jpg);
+  /* width: 200px;
+        height: 150px; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 200px;
+  padding: 24px 12px;
+  position: fixed;
+  top: 60%;
+  left: 10px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 2s;
+
+
+}
+
+.sale-box .Anniversary {
+  max-width: 99%;
+  padding-top: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #FFf;
+}
+
+.sale-box .off20 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+
+}
+
+.sale-box-btn {
+  background-color: #2c94ff;
+  color: #fff;
+  margin: 6px;
+  padding: 3px 10px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.close-icone {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  max-width: 100px;
+  transition: all 0.3s;
+ 
+
+
+}
+
+.close-icone:hover {
+  transform: rotate(90deg);
+
+}
+
+
+.footer-dark ul a:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  color: #f0f9ff;
+}
+
+.featurette h4 {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #5E606C;
+}
+
+.featurette p {
+  font-size: 16px;
+  font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #5E606C;
+
+}
+
+.single-box {
+  text-align: center;
+  margin: 45px 0;
+  padding: 8px 16px;
+  border-right: 1px solid #fe7865;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.single-box h2 {
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.rup {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.discount {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  bottom: 18%;
+  right: 20px;
+  color: rgb(62, 178, 62);
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: rgb(255, 255, 92);
+  background-color: #333;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  padding-top: 3px;
+  border-radius: 40px;
+}
+
+.star span {
+  color: #fff;
+  padding-left: 3px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: -webkit-linear-gradient(317deg, rgba(131, 58, 180, 1) 0%, rgba(29, 147, 253, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media only screen and (max-width: 600px) {}
+
+.footer-dark {
+  padding: 50px 0;
+  color: #fff;
+  background-color: #2c3c4b;
+}
+
+.hr {
+  background-color: #fe7865;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+  color: #f5f5f5;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+p{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 200;
+
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social>a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .lastfooter {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
